@@ -18,7 +18,7 @@ function App() {
         </header>
         <main className="">
           <div className="grid grid-cols-2items-center justify-center min-h-screen">
-            <h2 className="text-center uppercase font-extrabold italic text-3xl col-span-2 ">
+            <h2 className="text-center mt-1 text-4xl text-gray-900  tracking-wide uppercase font-extrabold   col-span-2 ">
               Agregar nuevo cuadro
             </h2>
             <form className="grid grid-cols-2 w-full gap-2 p-2 items-center justify-center m-auto col-span-2 md:col-span-1">
