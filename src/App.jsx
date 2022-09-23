@@ -82,7 +82,7 @@ function App() {
             <input
               type="text"
               className="block w-full px-4  py-3 mb-4  border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
-              placeholder="Tecnica "
+              placeholder="Tecnica. "
             />
 
             <div class="block">
