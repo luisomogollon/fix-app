@@ -21,69 +21,12 @@ function App() {
             <h2 className="text-center mt-1 lg:text-4xl ms:text-4xl text-gray-900 italic tracking-wide uppercase font-extrabold   col-span-2 ">
               Agregar nuevo cuadro
             </h2>
-            <form className="grid grid-cols-2 w-full gap-2 p-2 items-center justify-center m-auto col-span-2 md:col-span-1">
-              <div className="col-span-2">
-                <label
-                  for="imageFile"
-                  className="cursor-pointer lg:text-2xl ms:text-4xl font-semibold italic w-full p-2 text-center block uppercase bg-black-400 rounded-sm hover:bg-blue-600"
-                >
-                  subir imagen
-                </label>
-                <input
-                  type="file"
-                  name="imageFile"
-                  id="imageFile"
-                  className="hidden"
-                  onchange="previewImage()"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm col-span-2">
-                <span className="block">Nombre:</span>
-                <input
-                  type="text"
-                  className="bg-slate-200 rounded-sm w-full text-gray-700 outline-none p-1"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm">
-                <span className="block">Año</span>
-                <input
-                  type="Number"
-                  className="bg-slate-200 rounded-sm w-full text-gray-700 outline-none p-1"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm">
-                <span className="block">Tecnica</span>
-                <input
-                  type="text"
-                  className="bg-slate-200 rounded-sm w-full text-gray-700 outline-none p-1"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm">
-                <span className="block">Altura</span>
-                <input
-                  type="number"
-                  className="bg-slate-200 rounded-sm w-full text-gray-700 outline-none p-1"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm">
-                <span className="block">Anchura</span>
-                <input
-                  type="number"
-                  className="bg-slate-200 rounded-sm w-full text-gray-700 outline-none p-1"
-                />
-              </div>
-              <div className="bg-gray-100 text-gray-700 p-2 rounded-sm col-span-2">
-                <span className="block">Descripcion</span>
-                <textarea
-                  type="text"
-                  rows="3"
-                  className="w-full resize-none bg-slate-200 rounded-sm text-gray-700 outline-none p-1"
-                ></textarea>
-              </div>
-              <button className="bg-indigo-700 hover:bg-indigo-800 w-full p-2  col-span-2 text-center items-center justify-center text-white rounded-sm">
-                CREAR CUADRO
-              </button>
-            </form>
+            <div className="w-full mt-16 md:mt-0 md:w-2/5"> 
+            
+            
+            
+            
+            </div>
 
             <img
               src={imagenes.img5}
