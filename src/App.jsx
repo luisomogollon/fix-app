@@ -12,7 +12,7 @@ function App() {
 
         
       </head>
-      <body className="min-h-screen w-full flex flex-col bg-gray-200 justify-between m-0 p-0 bg-whit text-gray-800">
+      <body className="w-full px-8 py-16 bg-gray-100 xl:px-8">
         <header className="max-content p-2">
           <h1 className="p-4 text-3xl font-semibold italic">L’Art</h1>
         </header>
