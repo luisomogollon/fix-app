@@ -6,7 +6,7 @@ function App() {
     <section class="text-gray-600 body-font bg-gray-100">
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 shadow-2xl px-7">
+          <div class="relative z-10 h-auto p-10 py-5 overflow-hidden bg-white border-b-2 border-gray-300  px-7">
             <h3 class="mb-6 text-2xl font-medium text-center">Subir Imagen</h3>
 
             <label for="" className="text-xs font-semibold px-1 mb-4 ">
@@ -15,13 +15,13 @@ function App() {
 
             <input
               type="text"
-              className="block w-full px-4  py-3 mb-4  border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+              className="block w-full px-4  py-3 mb-4  border-2 b  rounded-sm border-gray-400 outline-none focus:border-indigo-500"
               placeholder="Picture name "
             />
 
-            <div className="flex  gap-x-1 justify-items-center	 -mx-3">
+            <div className="flex  gap-x-1 justify-items-center rounded-sm	 -mx-3">
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="text-xs font-semibold px-1">
+                <label for="" className="text-xs font-semibold px-1 ">
                   Año
                 </label>
 
@@ -32,25 +32,25 @@ function App() {
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3 pr-3 py-2  border-2 border-gray-400 outline-none focus:border-indigo-500"
                     placeholder="Año"
                   />
                 </div>
               </div>
 
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="text-xs font-semibold px-1">
+                <label for="" className="text-xs font-semibold rounded-sm px-1">
                   Anchura
                 </label>
 
                 <div className="flex">
-                  <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                  <div className="w-10 z-10 pl-1 text-center  pointer-events-none flex items-center justify-center">
                     <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>
                   </div>
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3 pr-3 py-2 rounded-ms border-2 border-gray-400 outline-none focus:border-indigo-500"
                     placeholder="Achura"
                   />
                 </div>
@@ -68,7 +68,7 @@ function App() {
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3   pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3   pr-3 py-2 rounded-sm border-2 border-gray-400 outline-none focus:border-indigo-500"
                     placeholder="Altura"
                   />
                 </div>
@@ -81,13 +81,13 @@ function App() {
 
             <input
               type="text"
-              className="block w-full px-4  py-3 mb-4  border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+              className="block w-full px-4  py-3 mb-4  border-2 border-transparent  rounded-sm border-gray-400 outline-none focus:border-indigo-500"
               placeholder="Tecnica. "
             />
            
           <div class="relative">
-            <label for="message" class="leading-7  font-semibold px-1  text-gray-600">Descripción</label>
-            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            <label for="message" class="leading-7  font-semibold px-1   text-gray-600">Descripción</label>
+            <textarea id="message" name="message" class="w-full border-gray-400 bg-gray-100 bg-opacity-50 rounded  border-2  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           </div>
 
             <div class="block">
