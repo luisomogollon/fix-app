@@ -19,7 +19,7 @@ function App() {
               placeholder="Picture name "
             />
 
-            <div className="flex justify-center gap-x-1	 -mx-3">
+            <div className="flex  gap-x-1 justify-items-center	 -mx-3">
               <div className="w-1/2 px-3 mb-5">
                 <label for="" className="text-xs font-semibold px-1">
                   Año
@@ -84,6 +84,11 @@ function App() {
               className="block w-full px-4  py-3 mb-4  border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
               placeholder="Tecnica. "
             />
+           
+          <div class="relative">
+            <label for="message" class="leading-7  font-semibold px-1  text-gray-600">Descripción</label>
+            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
 
             <div class="block">
               <button class="w-full px-3 py-4 font-medium text-white bg-blue-600 rounded-lg">
