@@ -36,13 +36,21 @@ function App() {
               >
                 Home
               </a>
-             
             </nav>
           </div>
 
           <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end"></div>
         </div>
       </section>
+
+      <div className="  sm:py-12 sm:px-6 lg:px-4 sm:text-center">
+      <h2 className="text-base font-semibold flex italic justify-center text-indigo-600 tracking-wide uppercase">
+          L'Art
+          </h2>
+        <p className="mt-1  font-bold text-gray-900 italic justify-center flex sm:text-5xl lg:text-5xl">
+          AGREGAR NUEVO CUADRO
+        </p>
+      </div>
 
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -186,6 +194,18 @@ function App() {
           </div>
         </div>
       </div>
+
+      <section className="text-gray-700 bg-slate-400 body-font">
+        <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+          <button className="text-xl font-black leading-none text-gray-900 select-none logo">
+            L'Art<span className="text-indigo-600">.</span>
+          </button>
+          <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">
+            © 2022 Tails - Tailwindcss Page Builder
+          </p>
+          <span className="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"></span>
+        </div>
+      </section>
     </section>
   );
 }
