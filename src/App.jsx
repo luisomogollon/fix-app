@@ -1,15 +1,87 @@
 import "./App.css";
+import { useState } from "react";
 import imagenes from "../src/assets/imagenes";
 
 function App() {
-  return (
-    <section class="text-gray-600 body-font bg-gray-100">
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <div class="relative z-10 h-auto p-10 py-5 overflow-hidden bg-white border-b-2 border-gray-300  px-7">
-            <h3 class="mb-6 text-2xl font-medium text-center">Subir Imagen</h3>
+  const [cover, setCover] = useState("");
+  function handleOnChangeFile(e) {
+    const element = e.target;
+    const file = element.files[0];
+    const reader = new FileReader();
 
-            <label for="" className="leading-8  font-semibold px-1   text-gray-600 mb-4 ">
+    reader.readAsDataURL(file);
+
+    reader.onloadend = function () {
+      setCover(reader.result.toString());
+    };
+    reader.readAsDataURL(file);
+  }
+  return (
+    <section className="text-gray-600 body-font bg-gray-100">
+      <section class="w-full px-8 text-gray-700 bg-slate-400">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+          <div class="relative flex flex-col md:flex-row">
+            <a
+              href="#_"
+              class="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+            >
+              <span class="mx-auto text-xl font-black leading-none text-gray-900 select-none">
+                L'Art<span class="text-indigo-600">.</span>
+              </span>
+            </a>
+            <nav class="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200">
+              <a
+                href="#_"
+                class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+              >
+                Home
+              </a>
+              <a
+                href="#_"
+                class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+              >
+                Features
+              </a>
+              <a
+                href="#_"
+                class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+              >
+                Pricing
+              </a>
+              <a
+                href="#_"
+                class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+              >
+                Blog
+              </a>
+            </nav>
+          </div>
+
+          <div class="inline-flex items-center ml-5 space-x-6 lg:justify-end"></div>
+        </div>
+      </section>
+
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="relative z-10 h-auto p-10 py-5 overflow-hidden bg-white border-b-2 border-gray-300  px-7">
+            <label className="leading-8  font-semibold px-1   text-gray-600 mb-4">
+              Subir Imagen
+            </label>
+
+            <input
+              className="block w-full px-1 py-1 mb-4 bg-gray-50 border-2   rounded-sm border-gray-300 outline-none focus:border-indigo-500"
+              aria-describedby="user_avatar_help"
+              id="user_avatar"
+              type="file"
+              name="cover"
+              onChange={handleOnChangeFile}
+            />
+            {cover && <img alt="uploaded cover img" src={cover} width="200" />}
+
+            <label
+              htmlFor=""
+              className="leading-8  font-semibold px-1   text-gray-600 mb-4 "
+            >
               Nombre De Obra
             </label>
 
@@ -21,7 +93,10 @@ function App() {
 
             <div className="flex  gap-x-1 justify-items-center rounded-sm	 -mx-3">
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="leading-8  font-semibold px-1   text-gray-600 ">
+                <label
+                  htmlFor=""
+                  className="leading-8  font-semibold px-1   text-gray-600 "
+                >
                   Año
                 </label>
 
@@ -39,7 +114,10 @@ function App() {
               </div>
 
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="leading-8  font-semibold px-1   text-gray-600">
+                <label
+                  htmlFor=""
+                  className="leading-8  font-semibold px-1   text-gray-600"
+                >
                   Anchura
                 </label>
 
@@ -57,7 +135,10 @@ function App() {
               </div>
 
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="leading-8  font-semibold px-1   text-gray-600">
+                <label
+                  htmlFor=""
+                  className="leading-8  font-semibold px-1   text-gray-600"
+                >
                   Altura
                 </label>
 
@@ -75,7 +156,10 @@ function App() {
               </div>
             </div>
 
-            <label for="" className="  leading-8  font-semibold px-1   text-gray-600">
+            <label
+              htmlFor=""
+              className="  leading-8  font-semibold px-1   text-gray-600"
+            >
               Tecnica Del Pintor
             </label>
 
@@ -85,35 +169,36 @@ function App() {
               placeholder="Tecnica. "
             />
 
-            <div class="relative">
+            <div className="relative">
               <label
-                for="message"
-                class="leading-8 font-semibold px-1   text-gray-600"
+                htmlFor="message"
+                className="leading-8 font-semibold px-1   text-gray-600"
               >
                 Descripción
               </label>
               <textarea
                 id="message"
                 name="message"
-                class="w-full border-gray-300 bg-gray-50 bg-opacity-50 rounded  border-2    focus:border-indigo-500 h-20  text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                placeholder="Escribe Una Descripcion."
+                className="w-full border-gray-300 bg-gray-50 bg-opacity-50 rounded  border-2    focus:border-indigo-500 h-20  text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
 
-            <div class="block">
-              <button class="w-full px-3 py-4 mt-5 font-medium text-white bg-indigo-600 rounded-lg">
+            <div className="block">
+              <button className="w-full px-3 py-4 mt-5 font-medium text-white bg-indigo-600 rounded-lg">
                 Crear Cuadro
               </button>
             </div>
 
-            <p class="w-full mt-4 text-sm text-center text-gray-500">
-              <a href="#_" class="text-indigo-500 underline">
+            <p className="w-full mt-4 text-sm text-center text-gray-500">
+              <a href="#_" className="text-indigo-500 underline">
                 Cancelar
               </a>
             </p>
           </div>
         </div>
-        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <div class="flex justify-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className="flex justify-center">
             <img alt="imagen 2" src={imagenes.img5}></img>
           </div>
         </div>
