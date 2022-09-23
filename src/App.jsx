@@ -9,19 +9,19 @@ function App() {
           <div class="relative z-10 h-auto p-10 py-5 overflow-hidden bg-white border-b-2 border-gray-300  px-7">
             <h3 class="mb-6 text-2xl font-medium text-center">Subir Imagen</h3>
 
-            <label for="" className="text-xs font-semibold px-1 mb-4 ">
+            <label for="" className="leading-8  font-semibold px-1   text-gray-600 mb-4 ">
               Nombre De Obra
             </label>
 
             <input
               type="text"
-              className="block w-full px-4  py-3 mb-4  border-2 b  rounded-sm border-gray-400 outline-none focus:border-indigo-500"
+              className="block w-full px-4  py-3 mb-4  border-2 b  bg-gray-50 rounded-sm border-gray-300 outline-none focus:border-indigo-500"
               placeholder="Picture name "
             />
 
             <div className="flex  gap-x-1 justify-items-center rounded-sm	 -mx-3">
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="text-xs font-semibold px-1 ">
+                <label for="" className="leading-8  font-semibold px-1   text-gray-600 ">
                   Año
                 </label>
 
@@ -32,14 +32,14 @@ function App() {
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3 pr-3 py-2  border-2 border-gray-400 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3 pr-3 py-2  bg-gray-50 border-2 border-gray-300 outline-none focus:border-indigo-500"
                     placeholder="Año"
                   />
                 </div>
               </div>
 
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="text-xs font-semibold rounded-sm px-1">
+                <label for="" className="leading-8  font-semibold px-1   text-gray-600">
                   Anchura
                 </label>
 
@@ -50,54 +50,63 @@ function App() {
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3 pr-3 py-2 rounded-ms border-2 border-gray-400 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3 pr-3 bg-gray-50 py-2 rounded-ms border-2 border-gray-300 outline-none focus:border-indigo-500"
                     placeholder="Achura"
                   />
                 </div>
               </div>
 
               <div className="w-1/2 px-3 mb-5">
-                <label for="" className="text-xs font-semibold px-1">
+                <label for="" className="leading-8  font-semibold px-1   text-gray-600">
                   Altura
                 </label>
 
                 <div className="flex">
                   <div className="w-10 z-10 pl-1 mt-1 text-center pointer-events-none flex items-center justify-center">
-                    <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>
+                    <i className="mdi mdi-account-outline text-gray-400  text-lg"></i>
                   </div>
 
                   <input
                     type="text"
-                    className="w-full -ml-10 pl-3   pr-3 py-2 rounded-sm border-2 border-gray-400 outline-none focus:border-indigo-500"
+                    className="w-full -ml-10 pl-3  bg-gray-50  pr-3 py-2 rounded-sm border-2 border-gray-300 outline-none focus:border-indigo-500"
                     placeholder="Altura"
                   />
                 </div>
               </div>
             </div>
 
-            <label for="" className="text-xs font-semibold px-1">
+            <label for="" className="  leading-8  font-semibold px-1   text-gray-600">
               Tecnica Del Pintor
             </label>
 
             <input
               type="text"
-              className="block w-full px-4  py-3 mb-4  border-2 border-transparent  rounded-sm border-gray-400 outline-none focus:border-indigo-500"
+              className="block w-full px-4   py-3 mb-4  bg-gray-50 border-2   rounded-sm border-gray-300 outline-none focus:border-indigo-500"
               placeholder="Tecnica. "
             />
-           
-          <div class="relative">
-            <label for="message" class="leading-7  font-semibold px-1   text-gray-600">Descripción</label>
-            <textarea id="message" name="message" class="w-full border-gray-400 bg-gray-100 bg-opacity-50 rounded  border-2  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
+
+            <div class="relative">
+              <label
+                for="message"
+                class="leading-8 font-semibold px-1   text-gray-600"
+              >
+                Descripción
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="w-full border-gray-300 bg-gray-50 bg-opacity-50 rounded  border-2    focus:border-indigo-500 h-20  text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
 
             <div class="block">
-              <button class="w-full px-3 py-4 font-medium text-white bg-blue-600 rounded-lg">
+              <button class="w-full px-3 py-4 mt-5 font-medium text-white bg-indigo-600 rounded-lg">
                 Crear Cuadro
               </button>
             </div>
 
             <p class="w-full mt-4 text-sm text-center text-gray-500">
-              <a href="#_" class="text-blue-500 underline">
+              <a href="#_" class="text-indigo-500 underline">
                 Cancelar
               </a>
             </p>
