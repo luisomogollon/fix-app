@@ -3,46 +3,49 @@ import imagenes from "../src/assets/imagenes";
 
 function App() {
   return (
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>L’Art</title>
-
-        
-      </head>
-      <body className="w-full px-8 py-16 bg-gray-100 xl:px-8">
-        <header className="max-content p-2">
-          <h1 className="p-4 text-3xl font-semibold italic">L’Art</h1>
-        </header>
-        <main className="">
-          <div className="grid grid-cols-2items-center justify-center min-h-screen">
-            <h2 className="text-center mt-1 lg:text-4xl ms:text-4xl text-gray-900 italic tracking-wide uppercase font-extrabold   col-span-2 ">
-              Agregar nuevo cuadro
-            </h2>
-            <div className="w-full mt-16 md:mt-0 md:w-2/5"> 
-            
-            
-            
-            
-            </div>
-
-            <img
-              src={imagenes.img5}
-              alt=""
-              className="p-4 m-auto w-full h-full rounded-sm block col-span-2 md:col-span-1"
-              id="imagePreview"
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
+            <h3 class="mb-6 text-2xl font-medium text-center">
+              Sign in to your Account
+            </h3>
+            <input
+              type="text"
+              name="email"
+              class="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+              placeholder="Email address"
             />
+            <input
+              type="password"
+              name="password"
+              class="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+              placeholder="Password"
+            />
+            <div class="block">
+              <button class="w-full px-3 py-4 font-medium text-white bg-blue-600 rounded-lg">
+                Log Me In
+              </button>
+            </div>
+            <p class="w-full mt-4 text-sm text-center text-gray-500">
+              Don't have an account?{" "}
+              <a href="#_" class="text-blue-500 underline">
+                Sign up here
+              </a>
+            </p>
           </div>
-        </main>
-        <footer className="max-content flex items-center">
-          <h2 className="italic text-lg font-semibold p-2">L’Art</h2>
-          <p className="text-sm font-light">All rights reserverd</p>
-        </footer>
-        <script src="js/index.js"></script>
-      </body>
-    </html>
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <p class="mb-8 leading-relaxed">
+            
+            aqui imagen
+          </p>
+          <div class="flex justify-center">
+            
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
